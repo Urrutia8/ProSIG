@@ -79,10 +79,14 @@
         function pop_escuelas_LCC_NAD27_4(feature, layer) {
             var popupContent = '<table class="table">\
                     <tr>\
-                        <td colspan="2"><strong>Latitud</strong><br />' + (feature.properties['LATGRADOS'] !== null ? Autolinker.link(feature.properties['LATGRADOS'].toLocaleString()) : '') + '.' + (feature.properties['LATMIN'] !== null ? Autolinker.link(feature.properties['LATMIN'].toLocaleString()) : '') + (feature.properties['LATSEG'] !== null ? Autolinker.link(feature.properties['LATSEG'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Latitud</strong><br />' + (feature.properties['LATGRADOS'] !== null ? Autolinker.link(feature.properties['LATGRADOS'].toLocaleString()) : '') + '.' + 
+                        (feature.properties['LATMIN'] !== null ? Autolinker.link(feature.properties['LATMIN'].toLocaleString()) : '') + 
+                        (feature.properties['LATSEG'] !== null ? Autolinker.link(feature.properties['LATSEG'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2"><strong>Longitud</strong><br />' + '-' + (feature.properties['LONGRADOS'] !== null ? Autolinker.link(feature.properties['LONGRADOS'].toLocaleString()) : '') + '.' + (feature.properties['LONMIN'] !== null ? Autolinker.link(feature.properties['LONMIN'].toLocaleString()) : '') + (feature.properties['LONSEG'] !== null ? Autolinker.link(feature.properties['LONSEG'].toLocaleString()) : '') + '</td>\
+                        <td colspan="2"><strong>Longitud</strong><br />' + '-' + (feature.properties['LONGRADOS'] !== null ? Autolinker.link(feature.properties['LONGRADOS'].toLocaleString()) : '') + '.' + 
+                        (feature.properties['LONMIN'] !== null ? Autolinker.link(feature.properties['LONMIN'].toLocaleString()) : '') + 
+                        (feature.properties['LONSEG'] !== null ? Autolinker.link(feature.properties['LONSEG'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
                         <td colspan="2"><strong>Nombre</strong><br />' + (feature.properties['NOMBRE_CEN'] !== null ? Autolinker.link(feature.properties['NOMBRE_CEN'].toLocaleString()) : '') + '</td>\
