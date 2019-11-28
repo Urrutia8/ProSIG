@@ -18,7 +18,15 @@
         <title></title>
     </head>
     <body>
-        <div id="map">
+        <div class="panel panel-default" style="align-content: center;">
+                <form style="text-align:center;">
+                    <h1>Centros escolares El Salvador</h1>
+                </form>
+                <form style="text-align:center;"> 
+                    <input type="button" value="Print" onclick="window.print()" /> 
+                </form>
+        </div>
+        <div id="map" style="width: 100%; height: 490px; position: relative; outline: currentcolor none medium;">
         </div>
         <script src="js/qgis2web_expressions.js"></script>
         <script src="js/leaflet.js"></script>
@@ -35,7 +43,7 @@
             zoomControl:true, maxZoom:28, minZoom:1
         }).fitBounds([[12.909153264033208,-90.72637262335712],[15.04897522394078,-87.30209341738252]]);
         var hash = new L.Hash(map);
-        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
+        map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org"></a>');
         var bounds_group = new L.featureGroup([]);
         function setBounds() {
         }
@@ -385,5 +393,6 @@
         L.control.layers(baseMaps,{'Escuelas<br /><table><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_AHUACHAPAN0.png" /></td><td>AHUACHAPAN</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_CABAï½AS1.png" /></td><td>CABAÑAS</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_CHALATENANGO2.png" /></td><td>CHALATENANGO</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_CUSCATLAN3.png" /></td><td>CUSCATLAN</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_LALIBERTAD4.png" /></td><td>LA LIBERTAD</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_LAPAZ5.png" /></td><td>LA PAZ</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_LAUNION6.png" /></td><td>LA UNION</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_MORAZAN7.png" /></td><td>MORAZAN</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_SANMIGUEL8.png" /></td><td>SAN MIGUEL</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_SANSALVADOR9.png" /></td><td>SAN SALVADOR</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_SANVICENTE10.png" /></td><td>SAN VICENTE</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_SANTAANA11.png" /></td><td>SANTA ANA</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_SONSONATE12.png" /></td><td>SONSONATE</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_USULUTAN13.png" /></td><td>USULUTAN</td></tr><tr><td style="text-align: center;"><img src="legend/escuelas_LCC_NAD27_4_14.png" /></td><td></td></tr></table>': layer_escuelas_LCC_NAD27_4,"OSM Standard": layer_OSMStandard_3,"Google Labels": layer_GoogleLabels_2,"Google.cn Normal": layer_GooglecnNormal_1,"Google.cn Satellite": layer_GooglecnSatellite_0,},{collapsed:false}).addTo(map);
         setBounds();
         </script>
+
     </body>
 </html>
